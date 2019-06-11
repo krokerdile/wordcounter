@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html, body{
+            height:100%;
+            margin: 0;
+            font-size: 10px;
+        }
+        header{
+            height: auto;
+            text-align: center;
+            vertical-align: center;
+            font-size: 5em;
+        }
+        .container{
+            height:70%;
+        }
+        .content{
+            height:100%;
+            border-top: black 1px solid;
+            margin-left: 10%; 
+            margin-right: 10%;
+            font-size:1.5em;
+        }
+        .intro{
+            border-top: black 1px dashed;
+            border-bottom: black 1px dashed;
+            margin-bottom:5px;
+        }
+        footer{
+            height:15%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>WORD COUNTER</p>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h1 style="margin-bottom:5px;">About</h1>
+            <div class="intro">
+            <p>안녕하세요, 저는 경북대학교 멋사 7기 김현우입니다. 
+                멋사 활동을 하면서 학교에서 듣는 수업과 클래스라이언에 
+                있는 Word Counter 수업을 참고해서 이번 과제를 수행했습니다.
+                무언가 더 더해보고 싶었지만 아직 파이썬 쪽에 대해서 이해가 부족해
+                적당히 CSS를 깔끔하게 만들어 보려고 하였습니다.
+                
+            </p> 
+            </div>
+            <a href="{%url 'home' %}" style="text-decoration: none; color: cornflowerblue;"><strong>Home</strong></a>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

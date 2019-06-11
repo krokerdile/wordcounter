@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html, body{
+            height:100%;
+            margin: 0;
+            font-size: 10px;
+        }
+        header{
+            height: auto;
+            text-align: center;
+            vertical-align: center;
+            font-size: 5em;
+        }
+        .container{
+            height:70%;
+        }
+        .content{
+            height:100%;
+            border-top: black 1px solid;
+            margin-left: 10%; 
+            margin-right: 10%;
+        }
+        .about{
+            font-size: 1.5em;
+            text-decoration : none;
+            color: cornflowerblue;
+            border-top: 1px black dashed;
+        }
+        .input{
+            width:100%;
+        }
+        #form1{
+            width:100%;
+        }
+        #text{
+            width: 100%;
+        }
+        footer{
+            height:15%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>WORD COUNTER</p>
+    </header>
+    <div class="container">
+        <div class="content">
+            <p style="font-size:1.5em"> 여러분이 문장을 입력해주신다면, 단어의 빈도수를 측정해서 알려드겠습니다.</p>
+            
+            <div class="about"><a href="{%url 'about' %}" class="about">About Site</a></div>
+            <div class="input">
+                <form action="{%url 'result' %}" class="form1">
+                    <textarea cols="75" rows="10" name="fulltext" id="text" placeholder="Ex)hello my name is hyunwoo kim, i'm member of LikeLion"></textarea>
+                    <br>
+                    <input type="submit" value="Count">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
